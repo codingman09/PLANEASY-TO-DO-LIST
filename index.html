@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app">
+  <h1>PLAN-EASY WITH Your TO-DO LIST</h1>
+  <p>Dear User Please Enter Your Tasks with Date & Time </p>
+ 
+  <input type="text" id="todo-input" placeholder="Add your WishList"/>
+
+<div class="datetime-box">
+  <select id="todo-day">
+    <option value="">Day</option>
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+    <option>Saturday</option>
+    <option>Sunday</option>
+  </select>
+
+  <input type="date" id="todo-date"/>
+
+  <input type="text" id="start-time" placeholder="Start"/>
+  <select id="start-meridiem">
+    <option>AM</option>
+    <option>PM</option>
+  </select>
+
+  <input type="text" id="end-time" placeholder="End"/>
+  <select id="end-meridiem">
+    <option>AM</option>
+    <option>PM</option>
+  </select>
+</div>
+
+<button id="add-btn">Add Todo</button>
+
+  <ul id="todo-list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

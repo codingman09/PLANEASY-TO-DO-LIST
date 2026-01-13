@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> PLANEASY TO-DO </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="sidebar">
+    <h2> MY PLAN-EASY A TO-DO LIST</h2>
+    <p
+       style = "font-size : 12px;opacity : 0.7;"> Hello User Welcome To PLANEASY Now Plan Your To-Do List With 'PLAN EASY' </p>
+
+    <div class="menu">
+      <button id="dashBtn" class="active">Dashboard</button>
+      <button id="taskBtn">Tasks</button>
+    </div>
+
+    <h4>Categories</h4>
+    <ul id="categoryList"></ul>
+
+    <div class="new-category">
+      <input type="text" id="newCategoryInput" placeholder="New category">
+      <button id="addCategoryBtn">Add</button>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="page">
+      <h2>Dashboard</h2>
+
+      <div class="stats">
+        <div>Total<br><span id="totalCount">0</span></div>
+        <div>Completed<br><span id="completedCount">0</span></div>
+        <div>Pending<br><span id="pendingCount">0</span></div>
+      </div>
+
+      <h3>By Category</h3>
+      <ul id="categoryStats"></ul>
+    </div>
+
+    <!-- TASKS -->
+    <div id="tasks" class="page hidden">
+      <h2>Tasks</h2>
+
+      <div class="task-form">
+        <input id="taskInput" placeholder="Task name">
+        <select id="taskCategory"></select>
+        <input type="date" id="taskDate">
+
+        <input type="time" id="startTime">
+        <select id="startMer">
+          <option>AM</option><option>PM</option>
+        </select>
+
+        <input type="time" id="endTime">
+        <select id="endMer">
+          <option>AM</option><option>PM</option>
+        </select>
+
+        <button id="addTaskBtn">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
